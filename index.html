@@ -3,690 +3,190 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portal PROYECTA-IA para Taller de Tesis II y elaboración de Proyectos de Grado.">
-  <title>PROYECTA-IA | Taller de Tesis II</title>
+  <meta name="description" content="PROYECTA-IA: viñetas, conectores gramaticales y redacción de párrafos para Proyecto de Grado de Ingeniería.">
+  <title>PROYECTA-IA | Viñetas, Conectores y Párrafos</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <!-- PROYECTA-IA PORTAL VISUAL V2 - portada universal con Educcartes -->
-<header class="topbar">
-    <div class="wrap topbar-inner">
+<body class="access-locked">
+  <div id="accessGate" class="access-gate">
+    <div class="access-card">
+      <div class="access-logo">P</div>
+      <h2>Acceso a PROYECTA-IA</h2>
+      <p class="access-subtitle">Viñetas · Conectores · Párrafos</p>
+      <p>Ingresa tu número de Carnet de Identidad autorizado.</p>
+      <label for="ciAccess">Número de C.I.</label>
+      <input id="ciAccess" type="password" inputmode="numeric" autocomplete="off" placeholder="Solo números">
+      <button id="accessBtn" class="primary access-button" type="button">Ingresar</button>
+      <p id="accessMessage" class="access-message" aria-live="polite"></p>
+      <p class="access-privacy">El acceso se valida mediante la base central de PROYECTA-IA.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
       <div class="brand">
         <div class="brand-mark">P</div>
         <div>
           <h1>PROYECTA-IA</h1>
-          <p>Portal de apoyo metodológico para Proyectos de Grado</p>
+          <p>Herramienta transversal de redacción académica</p>
+          <p class="author">Realizado por: Luis Cabezas Tito, Ph. D.</p>
         </div>
+      </div>
+      <div class="header-actions">
+        <div class="badge">VIÑETAS · CONECTORES · PÁRRAFOS</div>
+        <button id="logoutBtn" class="logout-btn hidden" type="button">Cerrar sesión</button>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero-banner wrap">
-      <img
-        src="portada_proyecta_ia_universal_v2.png"
-        alt="PROYECTA-IA - Taller de Tesis II - Educcartes"
-      >
-    </section>
-
-    <section class="wrap intro">
-      <h2>Módulos disponibles de PROYECTA-IA</h2>
-      <p>
-        Selecciona el módulo que deseas utilizar. <strong>Este portal principal es público.</strong>
-        El número de C.I. autorizado se solicita únicamente al ingresar a cada chatbot. Todos los chatbots
-        utilizan la misma base central de acceso, por lo que los nuevos estudiantes se habilitan actualizando un solo archivo.
-      </p>
-    </section>
-
-    <section class="wrap chapter-heading" aria-label="Capítulo I">
-      <span>CAPÍTULO I</span>
-      <h2>GENERALIDADES</h2>
-      <p>Revisión metodológica secuencial de los apartados que conforman el primer capítulo del Proyecto de Grado.</p>
-    </section>
-
-    <section class="wrap cards" aria-label="Módulos del Capítulo I de PROYECTA-IA">
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">1.1</span>
-          <div class="module-icon">📝</div>
-        </div>
-        <div class="module-body">
-          <h3>Introducción</h3>
-          <p>
-            Revisa estructura, coherencia, contextualización, citas, redacción científica
-            y organización general de la Introducción.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-introduccion/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card green">
-        <div class="module-top">
-          <span class="module-number">1.2</span>
-          <div class="module-icon">📚</div>
-        </div>
-        <div class="module-body">
-          <h3>Antecedentes</h3>
-          <p>
-            Comprueba si los antecedentes corresponden a proyectos, tesis o investigaciones
-            previas semejantes y no simplemente a descripciones de tecnología.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-antecedentes/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">1.3</span>
-          <div class="module-icon">🎯</div>
-        </div>
-        <div class="module-body">
-          <h3>Objeto de Estudio</h3>
-          <p>
-            Verifica que el objeto de estudio identifique con precisión el elemento, sistema,
-            prototipo o solución central y que corresponda con el título y el objetivo general.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-objeto-estudio/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card purple">
-        <div class="module-top">
-          <span class="module-number">↔</span>
-          <div class="module-icon">🔎</div>
-        </div>
-        <div class="module-body">
-          <h3>Título y Objetivo General</h3>
-          <p>
-            Comprueba la concordancia entre el título y el Objetivo General aplicando la regla
-            metodológica definida en clase.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-titulo-objetivo/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">1.4</span>
-          <div class="module-icon">🔍</div>
-        </div>
-        <div class="module-body">
-          <h3>Planteamiento del Problema</h3>
-          <p>
-            Comprueba la Situación Actual, la descripción cuantitativa del problema identificado,
-            las fuentes de los datos y la Situación Futura si el problema no se resuelve.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-planteamiento-problema/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card green">
-        <div class="module-top">
-          <span class="module-number">1.5</span>
-          <div class="module-icon">❓</div>
-        </div>
-        <div class="module-body">
-          <h3>Formulación del Problema</h3>
-          <p>
-            Revisa la pregunta de investigación y su concordancia con el problema identificado,
-            el adverbio «Cómo» y el verbo del Objetivo General.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-formulacion-problema/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">1.6</span>
-          <div class="module-icon">🏁</div>
-        </div>
-        <div class="module-body">
-          <h3>Objetivos</h3>
-          <p>
-            Revisa el Objetivo General y los Objetivos Específicos: verbo en infinitivo,
-            preguntas de control, secuencia lógica y coherencia con la solución propuesta.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-objetivos/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card purple">
-        <div class="module-top">
-          <span class="module-number">1.7</span>
-          <div class="module-icon">💡</div>
-        </div>
-        <div class="module-body">
-          <h3>Justificaciones</h3>
-          <p>
-            Revisa las justificaciones Social, Técnica/Tecnológica, Económica y Académica,
-            diferenciando el destinatario y el argumento propio de cada una.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-justificaciones/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">1.8</span>
-          <div class="module-icon">🗺️</div>
-        </div>
-        <div class="module-body">
-          <h3>Alcances</h3>
-          <p>
-            Revisa la delimitación Espacial/Geográfica, Temática y Temporal del proyecto,
-            incluyendo ubicación, campos de conocimiento y duración del trabajo.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-alcances/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card green">
-        <div class="module-top">
-          <span class="module-number">1.8.4</span>
-          <div class="module-icon">🛡️</div>
-        </div>
-        <div class="module-body">
-          <h3>Límites del Proyecto</h3>
-          <p>
-            Comprueba qué aspectos quedan deliberadamente fuera del proyecto y si funcionan
-            como un escudo metodológico coherente con objetivos y alcances.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-limites/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">1.9</span>
-          <div class="module-icon">🧭</div>
-        </div>
-        <div class="module-body">
-          <h3>Metodología</h3>
-          <p>
-            Orienta y revisa enfoque, alcance, métodos, técnicas, instrumentos de investigación
-            y procedimiento ligado a la secuencia de los Objetivos Específicos.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-metodologia/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-
-    <section class="wrap chapter-heading transversal-heading" aria-label="Herramientas transversales">
-      <span>HERRAMIENTAS TRANSVERSALES</span>
-      <h2>REDACCIÓN, CITAS, REFERENCIAS, FIGURAS, TABLAS, APA Y DEFENSA</h2>
-      <p>Herramientas de apoyo que acompañan la redacción académica, la cohesión del texto, el formato del documento y la preparación de la predefensa o defensa final del Proyecto de Grado.</p>
-    </section>
-
-    <section class="wrap cards transversal-cards" aria-label="Herramientas transversales de redacción, viñetas, conectores, párrafos, APA 6, APA 7, figuras, tablas y defensa">
-      <article class="module-card purple">
-        <div class="module-top">
-          <span class="module-number">APA 6</span>
-          <div class="module-icon">📑</div>
-        </div>
-        <div class="module-body">
-          <h3>Citas y Referencias APA 6</h3>
-          <p>
-            Orienta sobre citas textuales, paráfrasis, número de autores, referencias bibliográficas,
-            control de fuentes reales y revisión de párrafos con citas.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-apa6/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">WORD</span>
-          <div class="module-icon">🖥️</div>
-        </div>
-        <div class="module-body">
-          <h3>APA 6 en Microsoft Word</h3>
-          <p>
-            Enseña a utilizar el gestor de citas de Word, seleccionar el tipo correcto de fuente,
-            revisar bibliografía automática y corregir «pág.»/«págs.» por «p.»/«pp.».
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-apa6-word/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">APA 7</span>
-          <div class="module-icon">📘</div>
-        </div>
-        <div class="module-body">
-          <h3>Normas APA 7</h3>
-          <p>
-            Explica y compara APA 7 con APA 6, revisa citas textuales y parafraseadas, autores y referencias,
-            incluye ejemplos y permite descargar el archivo APASeventhEdition.xsl para añadir APA 7 a Microsoft Word.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-apa7/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card purple">
-        <div class="module-top">
-          <span class="module-number">REDACCIÓN</span>
-          <div class="module-icon">✍️</div>
-        </div>
-        <div class="module-body">
-          <h3>Viñetas, Conectores y Párrafos</h3>
-          <p>
-            Enseña el uso coherente de viñetas y enumeraciones, conectores según su relación lógica y construcción de párrafos académicos; incluye ejemplos para Telecomunicaciones, Control y Automatización y Electromedicina, además de un revisor de TXT, DOCX y PDF.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-redaccion-academica/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card green">
-        <div class="module-top">
-          <span class="module-number">FIG./TAB.</span>
-          <div class="module-icon">📊</div>
-        </div>
-        <div class="module-body">
-          <h3>Figuras, Tablas y Redacción Científica</h3>
-          <p>
-            Revisa numeración por capítulo, títulos, fuente y nota, calidad de impresión a 300 ppp,
-            tablas continuadas, referencia desde el texto, interpretación posterior y redacción impersonal en tercera persona.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-figuras-tablas/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card teal">
-        <div class="module-top">
-          <span class="module-number">DEFENSA</span>
-          <div class="module-icon">🎤</div>
-        </div>
-        <div class="module-body">
-          <h3>Presentación, Predefensa y Defensa Final</h3>
-          <p>
-            Organiza las diapositivas y el tiempo de exposición, mejora el diseño visual y la oratoria,
-            prepara la demostración del prototipo, practica preguntas del tribunal y utiliza un checklist antes de defender.
-          </p>
-          <a class="module-link" href="./defensa/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <section class="wrap chapter-heading chapter-two-heading" aria-label="Capítulo II">
-      <span>CAPÍTULO II</span>
-      <h2>MARCO TEÓRICO Y CONCEPTUAL</h2>
-      <p>Construcción y revisión del sustento teórico y conceptual del Proyecto de Grado, con control de redacción científica, citas e integridad académica.</p>
-    </section>
-
-    <section class="wrap cards chapter-two-cards" aria-label="Módulos del Capítulo II de PROYECTA-IA">
-      <article class="module-card green chapter-two-card">
-        <div class="module-top">
-          <span class="module-number">II</span>
-          <div class="module-icon">📚</div>
-        </div>
-        <div class="module-body">
-          <h3>Marco Teórico y Conceptual</h3>
-          <p>
-            Ayuda a construir la estructura desde los Objetivos General y Específicos,
-            diferencia Marco Teórico y Conceptual, previene plagio, revisa párrafos y controla citas APA 6.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-marco-teorico-conceptual/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <section class="wrap chapter-heading chapter-three-heading" aria-label="Capítulo III">
-      <span>CAPÍTULO III</span>
-      <h2>INGENIERÍA DEL PROYECTO O MARCO PRÁCTICO</h2>
-      <p>Diseño y desarrollo técnico del proyecto, desde la arquitectura general del sistema hasta la ejecución de los Objetivos Específicos y el tratamiento correcto de las mediciones experimentales.</p>
-    </section>
-
-    <section class="wrap cards chapter-three-cards" aria-label="Módulos del Capítulo III de PROYECTA-IA">
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">III-A</span>
-          <div class="module-icon">🧩</div>
-        </div>
-        <div class="module-body">
-          <h3>Sistema y Subsistemas</h3>
-          <p>
-            Orienta el inicio del Capítulo III: párrafo introductorio, definición del sistema,
-            arquitectura general, identificación y descripción de subsistemas y relación entre hardware, software y firmware.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-ingenieria-proyecto/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">III-B</span>
-          <div class="module-icon">⚙️</div>
-        </div>
-        <div class="module-body">
-          <h3>Desarrollo por Objetivos Específicos</h3>
-          <p>
-            Convierte cada Objetivo Específico en una ruta de ingeniería y revisa selección tecnológica,
-            modelos matemáticos, cálculos, hardware, simulación, algoritmos, programación, implementación y diseño mecánico cuando corresponda.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-desarrollo-capitulo3/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card purple">
-        <div class="module-top">
-          <span class="module-number">III-C</span>
-          <div class="module-icon">📏</div>
-        </div>
-        <div class="module-body">
-          <h3>Mediciones, Errores, Incertidumbre y SI</h3>
-          <p>
-            Ayuda a planificar y analizar mediciones repetidas mediante media, varianza, desviación estándar,
-            teoría de errores e incertidumbre, cifras significativas, redondeo y uso correcto del Sistema Internacional de Unidades.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-mediciones/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-
-    <section class="wrap chapter-heading chapter-four-heading" aria-label="Capítulo IV">
-      <span>CAPÍTULO IV</span>
-      <h2>PRUEBAS, RESULTADOS, ANÁLISIS Y/O EVALUACIÓN TÉCNICA</h2>
-      <p>Verificación funcional y evaluación cuantitativa del desempeño del proyecto mediante pruebas, resultados, análisis técnico, indicadores, teoría de errores y comparación con referencias externas defendibles.</p>
-    </section>
-
-    <section class="wrap cards chapter-four-cards" aria-label="Módulos del Capítulo IV de PROYECTA-IA">
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">IV-A</span>
-          <div class="module-icon">🧪</div>
-        </div>
-        <div class="module-body">
-          <h3>Pruebas, Resultados y Análisis Técnico</h3>
-          <p>
-            Orienta la planificación de pruebas de hardware, software e integración/firmware; ayuda a construir
-            matrices de validación, criterios de aceptación, tablas, gráficas y el análisis técnico de los resultados obtenidos.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-pruebas-resultados/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">IV-B</span>
-          <div class="module-icon">📊</div>
-        </div>
-        <div class="module-body">
-          <h3>Evaluación Técnica</h3>
-          <p>
-            Evalúa cuantitativamente el desempeño del sistema, subsistemas, hardware, software o firmware mediante
-            precisión, exactitud, confiabilidad, eficiencia, eficacia, QoS, control, teoría de errores y criterios externos de comparación.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-evaluacion-tecnica/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <section class="wrap chapter-heading chapter-five-heading" aria-label="Capítulo V">
-      <span>CAPÍTULO V</span>
-      <h2>ANÁLISIS Y/O EVALUACIÓN ECONÓMICA</h2>
-      <p>Análisis de los costos del proyecto y, cuando corresponda, evaluación económica-social, evaluación económico-financiera e investigación de mercados para sustentar su factibilidad.</p>
-    </section>
-
-    <section class="wrap cards chapter-five-cards" aria-label="Módulos del Capítulo V de PROYECTA-IA">
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">V-A</span>
-          <div class="module-icon">💰</div>
-        </div>
-        <div class="module-body">
-          <h3>Análisis Económico</h3>
-          <p>
-            Ayuda a organizar los costos del proyecto: hardware y equipos, software, implementación,
-            recursos humanos y otros costos pertinentes; consolida las tablas en bolivianos (Bs.) y orienta
-            el análisis económico sin convertirlo obligatoriamente en una evaluación financiera.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-analisis-economico/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card green">
-        <div class="module-top">
-          <span class="module-number">V-B</span>
-          <div class="module-icon">⚖️</div>
-        </div>
-        <div class="module-body">
-          <h3>Evaluación Económica-Social</h3>
-          <p>
-            Módulo opcional para proyectos sin ingresos directos. Orienta el cálculo de la relación
-            Beneficio/Costo (B/C), la identificación y valoración de beneficios y contrabeneficios,
-            y la interpretación de la factibilidad económica-social del proyecto.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-evaluacion-economica-social/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">V-C</span>
-          <div class="module-icon">📈</div>
-        </div>
-        <div class="module-body">
-          <h3>Evaluación Económico-Financiera</h3>
-          <p>
-            Para proyectos que generan ingresos o servicios comercializables. Ayuda a calcular e interpretar
-            VAN, TIR, tiempo de recuperación de capital, B/C y ROI; incluye orientación para estructurar flujos
-            y utilizar las funciones correspondientes de Excel.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-evaluacion-financiera/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card purple">
-        <div class="module-top">
-          <span class="module-number">V-D</span>
-          <div class="module-icon">🔎</div>
-        </div>
-        <div class="module-body">
-          <h3>Investigación y Estudio de Mercados</h3>
-          <p>
-            Orienta la identificación de clientes actuales y potenciales, segmentación, encuestas y entrevistas,
-            tamaño de muestra, codificación y procesamiento de datos, gráficas en Excel y proyección de la demanda
-            para Telecomunicaciones, Control y Automatización y Electromedicina.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-estudio-mercados/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-
-    <section class="wrap chapter-heading chapter-six-heading" aria-label="Capítulo VI">
-      <span>CAPÍTULO VI</span>
-      <h2>CONCLUSIONES Y RECOMENDACIONES</h2>
-      <p>Cierre académico del Proyecto de Grado: comprobación del cumplimiento de los objetivos, síntesis de resultados y recomendaciones de mejora futura.</p>
-    </section>
-
-    <section class="wrap cards chapter-six-cards" aria-label="Módulo del Capítulo VI de PROYECTA-IA">
-      <article class="module-card green">
-        <div class="module-top">
-          <span class="module-number">VI</span>
-          <div class="module-icon">✅</div>
-        </div>
-        <div class="module-body">
-          <h3>Conclusiones y Recomendaciones</h3>
-          <p>
-            Revisa que las conclusiones respondan a los objetivos y al problema con evidencias verificables,
-            y que las recomendaciones nazcan de resultados, limitaciones y mejoras futuras del prototipo o sistema.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-conclusiones-recomendaciones/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <section class="wrap chapter-heading final-doc-heading" aria-label="Parte final del Proyecto de Grado">
-      <span>PARTE FINAL DEL DOCUMENTO</span>
-      <h2>REFERENCIAS, GLOSARIO, APÉNDICES, ANEXOS Y RESUMEN</h2>
-      <p>Herramientas para completar los componentes finales obligatorios del Proyecto de Grado una vez concluido el desarrollo de los capítulos.</p>
-    </section>
-
-    <section class="wrap cards final-doc-cards" aria-label="Módulos de cierre documental de PROYECTA-IA">
-      <article class="module-card purple">
-        <div class="module-top">
-          <span class="module-number">FINAL</span>
-          <div class="module-icon">📚</div>
-        </div>
-        <div class="module-body">
-          <h3>Referencias, Glosario, Apéndices y Anexos</h3>
-          <p>
-            Comprueba correspondencia entre citas y referencias, orienta el glosario y diferencia correctamente
-            los apéndices elaborados por el estudiante de los anexos provenientes de fuentes externas.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-parte-final/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-
-      <article class="module-card blue">
-        <div class="module-top">
-          <span class="module-number">RESUMEN</span>
-          <div class="module-icon">📝</div>
-        </div>
-        <div class="module-body">
-          <h3>Resumen Final</h3>
-          <p>
-            Construye o revisa el resumen definitivo en cuatro párrafos: propósito, métodos, resultados y conclusiones,
-            con redacción científica, conectores y un máximo de 250 palabras.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-resumen-final/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <section class="wrap chapter-heading final-review-heading" aria-label="Revisión Final Integral">
-      <span>ÚLTIMO PASO</span>
-      <h2>REVISIÓN FINAL INTEGRAL</h2>
-      <p>Cuando el Proyecto de Grado esté concluido al 100 %, este módulo revisa integralmente el archivo Word y determina si alcanza el mínimo de 90/100 para pasar a la revisión final del docente.</p>
-    </section>
-
-    <section class="wrap cards final-review-cards" aria-label="Revisión Final Integral de PROYECTA-IA">
-      <article class="module-card orange">
-        <div class="module-top">
-          <span class="module-number">100%</span>
-          <div class="module-icon">🎓</div>
-        </div>
-        <div class="module-body">
-          <h3>Revisión Final Integral</h3>
-          <p>
-            Revisa el Proyecto de Grado completo, formato institucional, Capítulos I–VI, APA 6, tablas y figuras,
-            redacción científica y coherencia global; emite una ponderación sobre 100 y, si alcanza 90/100, habilita
-            el certificado preliminar de revisión PROYECTA-IA para la posterior revisión docente.
-          </p>
-          <a class="module-link" href="https://luisctito-sketch.github.io/proyecta-ia-revision-final/">
-            Abrir chatbot <span>→</span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <section class="wrap roadmap">
-      <div class="roadmap-card">
-        <div class="roadmap-icon">✅</div>
-        <div>
-          <h3>PROYECTA-IA continúa creciendo</h3>
-          <p>
-            PROYECTA-IA integra la ruta completa del Proyecto de Grado: Capítulos I–VI, herramientas transversales,
-            análisis y evaluaciones económicas, estudio de mercados, parte final del documento, resumen y la
-            Revisión Final Integral. Cada chatbot especializado mantiene su acceso mediante la base central de C.I.
-          </p>
-        </div>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">HERRAMIENTA TRANSVERSAL</span>
+      <h2>ESCRIBIR CON <span>ORDEN, COHESIÓN Y SENTIDO ACADÉMICO</span></h2>
+      <p>Este módulo enseña a utilizar correctamente las viñetas y enumeraciones, seleccionar conectores según la relación lógica entre ideas y construir párrafos científicos con una idea principal, sustento suficiente y cierre coherente. Al final, el estudiante puede pegar o cargar su propio texto para recibir una revisión automática.</p>
+      <div class="hero-grid">
+        <article><span>①</span><strong>Viñetas con criterio</strong><p>Mayúscula, minúscula y puntuación dependen de la estructura de cada elemento.</p></article>
+        <article><span>②</span><strong>Conectores con función</strong><p>No se colocan para adornar: deben expresar adición, causa, contraste, consecuencia, orden u otra relación real.</p></article>
+        <article><span>③</span><strong>Párrafos con unidad</strong><p>Una idea principal se desarrolla mediante oraciones de sustento y una transición o cierre pertinente.</p></article>
+        <article><span>④</span><strong>Revisión aplicada</strong><p>Analiza texto pegado o archivos TXT, DOCX y PDF sin enviar el documento a un servidor externo.</p></article>
       </div>
     </section>
 
-    <section class="wrap principles">
-      <div class="principle">
-        <span>✓</span>
-        <div><strong>Revisar, no sustituir</strong><p>La herramienta orienta al estudiante sin hacer su proyecto por él o ella.</p></div>
+    <nav class="section-nav">
+      <a href="#vinetas">Viñetas</a><a href="#conectores">Conectores</a><a href="#parrafos">Párrafos</a>
+      <a href="#telecom">Telecomunicaciones</a><a href="#control">Control y Automatización</a><a href="#electromedicina">Electromedicina</a>
+      <a href="#revisor">Revisor</a><a href="#fuentes">Fuentes</a>
+    </nav>
+
+    <section id="vinetas" class="card">
+      <span class="section-number">1</span>
+      <h3>VIÑETAS Y ENUMERACIONES EN EL PROYECTO DE GRADO</h3>
+      <p class="lead">Una lista vertical debe mantener <b>paralelismo gramatical y uniformidad gráfica</b>. La puntuación no se elige al azar: depende de si los elementos son palabras, frases breves o enunciados completos.</p>
+      <div class="rules-grid">
+        <article><h4>A. Elementos muy breves</h4><p>Cuando son palabras o expresiones de una o dos palabras, pueden escribirse en minúscula y sin signo final, siempre que toda la lista conserve el mismo criterio.</p><div class="mini-example"><b>Variables medidas:</b><br>• temperatura<br>• humedad<br>• luminosidad</div></article>
+        <article><h4>B. Frases dependientes del enunciado</h4><p>Si los elementos completan gramaticalmente la frase introductoria, es recomendable iniciar con minúscula, separar los elementos con punto y coma y cerrar el último con punto.</p><div class="mini-example"><b>Se consideraron los siguientes criterios:</b><br>• precisión de medición;<br>• compatibilidad electrónica;<br>• disponibilidad comercial.</div></article>
+        <article><h4>C. Oraciones completas</h4><p>Si cada viñeta contiene una oración independiente, se inicia con mayúscula y se termina con punto final.</p><div class="mini-example"><b>Durante las pruebas se verificó lo siguiente:</b><br>• El enlace mantuvo conectividad durante 60 min.<br>• El controlador respondió ante cambios de referencia.<br>• El monitor registró los valores sin pérdida de datos.</div></article>
+        <article><h4>D. Consistencia obligatoria</h4><p>No conviene mezclar en una misma lista elementos con coma, otros sin signo y otros con punto. Tampoco se deben combinar sustantivos, infinitivos y oraciones completas sin una razón clara.</p><div class="mini-example bad"><b>Evitar:</b><br>• Sensores,<br>• seleccionar el controlador<br>• Se implementó la interfaz.</div></article>
       </div>
-      <div class="principle">
-        <span>✓</span>
-        <div><strong>Coherencia transversal</strong><p>Cada módulo busca mantener relacionados título, objetivo y demás partes del Proyecto de Grado.</p></div>
+      <div class="notice amber"><strong>Regla práctica PROYECTA-IA:</strong> primero determina qué función cumple la lista dentro de la oración. Luego escoge una sola pauta de mayúsculas y puntuación y aplícala a todos los elementos. No utilices una viñeta para esconder una redacción que debería ser un párrafo argumentativo.</div>
+      <h4>¿Cuándo conviene usar viñetas?</h4>
+      <div class="two-col">
+        <div class="checklist good-list"><b>SÍ conviene</b><ul><li>requisitos técnicos;</li><li>criterios de selección;</li><li>componentes de un subsistema;</li><li>etapas breves de un procedimiento;</li><li>condiciones de una prueba;</li><li>alcances o limitaciones claramente diferenciables.</li></ul></div>
+        <div class="checklist bad-list"><b>NO conviene</b><ul><li>reemplazar el desarrollo del marco teórico;</li><li>presentar resultados sin interpretarlos;</li><li>fragmentar un argumento que requiere continuidad;</li><li>escribir páginas enteras como listas;</li><li>mezclar ideas principales y detalles sin jerarquía.</li></ul></div>
       </div>
-      <div class="principle">
-        <span>✓</span>
-        <div><strong>Rigor académico</strong><p>Se priorizan redacción científica, criterios metodológicos y fuentes verificables.</p></div>
+    </section>
+
+    <section id="conectores" class="card">
+      <span class="section-number">2</span>
+      <h3>CONECTORES GRAMATICALES Y DISCURSIVOS</h3>
+      <p class="lead">Los conectores hacen visible la relación lógica entre ideas. Un buen texto no necesita insertar un conector en cada oración, pero sí debe permitir reconocer cuándo se añade, contrasta, explica, causa, concluye o ejemplifica algo.</p>
+      <div class="connector-table-wrap"><table class="connector-table"><thead><tr><th>Relación</th><th>Conectores útiles</th><th>Uso en un Proyecto de Grado</th></tr></thead><tbody>
+      <tr><td>Inicio / enfoque</td><td>En relación con, respecto de, en cuanto a, para comenzar</td><td>Presentar el tema o cambiar de aspecto sin ruptura.</td></tr>
+      <tr><td>Orden / secuencia</td><td>En primer lugar, a continuación, posteriormente, finalmente</td><td>Explicar procedimientos, etapas de diseño o secuencias de objetivos.</td></tr>
+      <tr><td>Adición</td><td>Además, asimismo, de igual forma, por otra parte</td><td>Agregar evidencia o un criterio complementario.</td></tr>
+      <tr><td>Aclaración</td><td>Es decir, en otras palabras, dicho de otra manera</td><td>Precisar una definición o interpretar un resultado.</td></tr>
+      <tr><td>Causa</td><td>Debido a que, dado que, puesto que, ya que</td><td>Explicar por qué ocurre un fenómeno o se adopta una decisión.</td></tr>
+      <tr><td>Consecuencia</td><td>Por tanto, por consiguiente, en consecuencia, por esta razón</td><td>Relacionar un resultado con su efecto técnico.</td></tr>
+      <tr><td>Contraste</td><td>Sin embargo, no obstante, en cambio, a pesar de ello</td><td>Comparar alternativas, resultados o comportamientos opuestos.</td></tr>
+      <tr><td>Comparación</td><td>De modo similar, a diferencia de, mientras que, del mismo modo</td><td>Contrastar sensores, tecnologías, métodos o escenarios.</td></tr>
+      <tr><td>Ejemplificación</td><td>Por ejemplo, en particular, como muestra, tal como</td><td>Ilustrar una idea general con un caso técnico.</td></tr>
+      <tr><td>Finalidad</td><td>Con el fin de, con el propósito de, para que</td><td>Expresar la finalidad de una acción o diseño.</td></tr>
+      <tr><td>Énfasis</td><td>En particular, en efecto, un aspecto clave</td><td>Destacar un hallazgo o criterio relevante sin exageración.</td></tr>
+      <tr><td>Síntesis / cierre</td><td>En síntesis, en resumen, en conclusión, finalmente</td><td>Recapitular una sección o cerrar una línea argumental.</td></tr>
+      </tbody></table></div>
+      <div class="notice blue"><strong>Importante:</strong> “sin embargo”, “por tanto” o “en consecuencia” solo deben utilizarse cuando exista realmente contraste o consecuencia. El conector no crea por sí mismo la relación lógica.</div>
+      <div class="notice amber"><strong>Redacción científica:</strong> expresiones como <i>“yo creo”, “en mi opinión”, “para mí”</i> no son adecuadas como apoyo argumentativo en el cuerpo técnico del Proyecto de Grado. La afirmación debe sustentarse en datos, resultados, literatura o criterios de ingeniería.</div>
+      <div class="practice-box"><h4>Comparación rápida</h4><p><b>Débil:</b> El sensor A tiene mayor precisión. <u>Además</u>, el sensor B tiene menor costo.</p><p><b>Mejor:</b> El sensor A presenta mayor precisión; <u>sin embargo</u>, el sensor B reduce el costo de implementación. <u>Por tanto</u>, la selección depende de la tolerancia de error admitida por el sistema.</p></div>
+    </section>
+
+    <section id="parrafos" class="card">
+      <span class="section-number">3</span>
+      <h3>CÓMO CONSTRUIR UN PÁRRAFO ACADÉMICO</h3>
+      <div class="paragraph-flow"><div><b>1</b><span>TEMA</span></div><i>→</i><div><b>2</b><span>IDEA PRINCIPAL</span></div><i>→</i><div><b>3</b><span>SUSTENTO</span></div><i>→</i><div><b>4</b><span>CIERRE / TRANSICIÓN</span></div></div>
+      <p>Un párrafo académico debe desarrollar una unidad de sentido. La primera oración presenta o delimita la idea principal; las oraciones centrales la explican mediante datos, relaciones causales, comparaciones, citas, cálculos o evidencias; y la última oración puede sintetizar el aporte del párrafo o enlazarlo con la idea siguiente.</p>
+      <div class="rules-grid">
+        <article><h4>Unidad</h4><p>Todas las oraciones deben contribuir a una misma idea central. Si una oración abre otro tema, probablemente necesita otro párrafo.</p></article>
+        <article><h4>Coherencia</h4><p>Las ideas deben seguir una secuencia comprensible: general→particular, causa→efecto, problema→evidencia, método→resultado, comparación→decisión, etc.</p></article>
+        <article><h4>Cohesión</h4><p>Pronombres, repeticiones controladas y conectores ayudan a enlazar oraciones. Evitar conectar mecánicamente cada frase con “además”.</p></article>
+        <article><h4>Sustento</h4><p>Una afirmación técnica importante debe apoyarse en resultados, mediciones, fuentes, cálculos o especificaciones. La opinión subjetiva no sustituye la evidencia.</p></article>
       </div>
+      <div class="notice amber"><strong>Extensión:</strong> PROYECTA-IA evita imponer un número rígido de oraciones. Como pauta de revisión del proyecto, se prefieren párrafos suficientemente desarrollados y legibles, sin bloques desproporcionados; además, se conserva la regla institucional de evitar párrafos excesivamente largos.</div>
+      <h4>Estructura de una pequeña sección</h4>
+      <ol class="section-sequence"><li><b>Párrafo introductorio:</b> presenta el propósito del apartado y su relación con el proyecto.</li><li><b>Dos o tres párrafos centrales:</b> desarrollan criterios, evidencia, comparación, cálculos o resultados.</li><li><b>Párrafo final:</b> sintetiza la decisión o conclusión parcial y prepara la siguiente sección.</li></ol>
+      <div class="mini-example bad"><b>Evitar:</b> “El sistema es muy bueno y funciona bastante bien. Además se probó. También tiene varios sensores. Por eso es eficiente.”<br><br><b>Problemas:</b> adjetivos subjetivos, ausencia de datos, conectores sin relación precisa y varias ideas sin desarrollo.</div>
+    </section>
+
+    <section id="telecom" class="card example-domain telecom">
+      <span class="section-number">4</span><h3>EJEMPLOS · TELECOMUNICACIONES</h3>
+      <div class="domain-examples">
+        <article><h4>Ejemplo de viñetas</h4><p>Para seleccionar el enlace inalámbrico se consideraron los siguientes criterios:</p><ul class="semi"><li>cobertura requerida;</li><li>tasa mínima de transmisión;</li><li>latencia admisible;</li><li>disponibilidad del espectro;</li><li>costo de implementación.</li></ul></article>
+        <article><h4>Ejemplo con conectores</h4><p>La banda de 2,4 GHz ofrece amplia compatibilidad con dispositivos comerciales; <b>sin embargo</b>, presenta mayor exposición a interferencias. <b>En cambio</b>, la banda de 5 GHz dispone de más canales y puede alcanzar mayores tasas de transferencia. <b>Por esta razón</b>, la selección debe considerar simultáneamente cobertura, congestión y capacidad requerida.</p></article>
+        <article><h4>Ejemplo breve de corrección</h4><p><b>Incorrecto:</b> “Elegimos LoRa porque es mejor.”<br><b>Corregido:</b> “Se seleccionó LoRa debido a que el enlace prioriza cobertura y bajo consumo por encima de una alta tasa de transmisión.”</p></article>
+      </div>
+      <details open><summary>Modelo de cinco párrafos</summary><div class="long-example"><p><b>Introducción.</b> La selección de la tecnología de comunicación constituye una decisión central en sistemas de telemetría, debido a que condiciona el alcance, la tasa de transmisión, el consumo energético y la confiabilidad del enlace. En este proyecto, la evaluación parte de los requerimientos reales de distancia y cantidad de datos, evitando seleccionar un protocolo únicamente por su popularidad comercial.</p><p><b>Desarrollo 1.</b> En primer lugar, se establece la distancia máxima entre nodos y la frecuencia con la que deben enviarse los paquetes. Asimismo, se determina el volumen aproximado de información generado por sensores y estados del sistema. Estos parámetros permiten descartar tecnologías cuya cobertura o capacidad resulten incompatibles con la aplicación.</p><p><b>Desarrollo 2.</b> A continuación, se comparan las alternativas según potencia de transmisión, sensibilidad del receptor, consumo y disponibilidad de infraestructura. Por ejemplo, una red Wi‑Fi puede proporcionar mayor velocidad; sin embargo, requiere cobertura local y suele demandar más energía que soluciones orientadas a telemetría de baja tasa.</p><p><b>Desarrollo 3.</b> Además de las especificaciones nominales, la decisión debe comprobarse mediante pruebas del enlace. Para ello, se registran pérdidas de paquetes, intensidad de señal y estabilidad bajo diferentes distancias u obstáculos. En consecuencia, la selección final se sustenta tanto en información técnica del fabricante como en evidencia obtenida durante la experimentación.</p><p><b>Cierre.</b> En síntesis, la tecnología de comunicación se adopta cuando satisface los requerimientos de cobertura, capacidad y confiabilidad definidos para el proyecto. Esta decisión establece las condiciones para el posterior diseño de la arquitectura de red y las pruebas de desempeño del sistema.</p></div></details>
+    </section>
+
+    <section id="control" class="card example-domain control">
+      <span class="section-number">5</span><h3>EJEMPLOS · SISTEMAS DE CONTROL Y AUTOMATIZACIÓN</h3>
+      <div class="domain-examples">
+        <article><h4>Ejemplo de viñetas</h4><p>La evaluación del controlador consideró:</p><ul class="sentences"><li>Se verificó el tiempo de establecimiento ante cambios de referencia.</li><li>Se registró el sobreimpulso máximo de la respuesta.</li><li>Se calculó el error en estado estacionario.</li></ul></article>
+        <article><h4>Ejemplo con conectores</h4><p>El control ON/OFF presenta una implementación sencilla; <b>no obstante</b>, genera oscilaciones alrededor del punto de operación. <b>Por consiguiente</b>, cuando la variable requiere una regulación más suave, resulta necesario evaluar una estrategia proporcional o PID.</p></article>
+        <article><h4>Ejemplo breve de corrección</h4><p><b>Incorrecto:</b> “El PID es preciso y eficiente.”<br><b>Corregido:</b> “El PID redujo el error estacionario respecto del control ON/OFF y mantuvo la variable dentro de la banda de tolerancia definida para la prueba.”</p></article>
+      </div>
+      <details open><summary>Modelo de cinco párrafos</summary><div class="long-example"><p><b>Introducción.</b> El diseño del sistema de control debe partir de la variable regulada, los límites de operación y la respuesta dinámica esperada. Por esta razón, la estrategia de control no se selecciona únicamente por disponibilidad de librerías, sino por su capacidad para mantener el proceso dentro de condiciones previamente definidas.</p><p><b>Desarrollo 1.</b> En primer lugar, se caracteriza la respuesta del proceso ante cambios de entrada. Esta información permite identificar retardos, velocidad de respuesta y posibles perturbaciones. A partir de estos datos se establecen indicadores como error estacionario, tiempo de establecimiento y sobreimpulso, los cuales servirán posteriormente como criterios de evaluación.</p><p><b>Desarrollo 2.</b> Posteriormente, se comparan alternativas de control. El control ON/OFF puede resultar suficiente cuando se admite una banda de histéresis; en cambio, una regulación PID resulta pertinente cuando se requiere reducir el error y modificar de manera progresiva la acción de control. La decisión debe relacionarse con los requerimientos reales del sistema.</p><p><b>Desarrollo 3.</b> Una vez implementado el controlador, se realizan ensayos bajo distintas referencias y perturbaciones. Además, se registran las variables de entrada y salida para analizar la estabilidad y repetibilidad de la respuesta. En consecuencia, la evaluación deja de depender de apreciaciones visuales y se apoya en indicadores cuantificables.</p><p><b>Cierre.</b> En síntesis, el controlador se considera adecuado cuando los resultados experimentales cumplen los criterios de aceptación establecidos. Esta evidencia permite justificar técnicamente la estrategia adoptada y prepara el análisis comparativo del capítulo de pruebas y resultados.</p></div></details>
+    </section>
+
+    <section id="electromedicina" class="card example-domain electro">
+      <span class="section-number">6</span><h3>EJEMPLOS · ELECTROMEDICINA</h3>
+      <div class="domain-examples">
+        <article><h4>Ejemplo de viñetas</h4><p>Para la adquisición de la señal se definieron los siguientes requisitos:</p><ul class="semi"><li>aislamiento eléctrico del paciente;</li><li>rango de entrada compatible con la señal;</li><li>rechazo de interferencia de red;</li><li>resolución suficiente del convertidor;</li><li>registro trazable de las mediciones.</li></ul></article>
+        <article><h4>Ejemplo con conectores</h4><p>La señal bioeléctrica presenta amplitud reducida y es susceptible al ruido; <b>por tanto</b>, la etapa de adquisición requiere acondicionamiento. <b>Además</b>, el aislamiento debe considerarse desde el diseño. <b>En consecuencia</b>, la selección de componentes no puede basarse únicamente en ganancia o costo.</p></article>
+        <article><h4>Ejemplo breve de corrección</h4><p><b>Incorrecto:</b> “El equipo es seguro para el paciente.”<br><b>Corregido:</b> “La seguridad eléctrica debe evaluarse mediante los criterios y ensayos aplicables; por ello, no se declara conformidad clínica únicamente a partir del funcionamiento del prototipo.”</p></article>
+      </div>
+      <details open><summary>Modelo de cinco párrafos</summary><div class="long-example"><p><b>Introducción.</b> El desarrollo de un sistema de electromedicina exige considerar simultáneamente la calidad de la señal y la seguridad de la interacción con el paciente. En consecuencia, la arquitectura de adquisición debe justificarse mediante parámetros eléctricos medibles y mediante los criterios técnicos aplicables al tipo de prototipo desarrollado.</p><p><b>Desarrollo 1.</b> En primer lugar, se caracteriza la señal de interés en términos de amplitud, contenido frecuencial y nivel esperado de interferencia. Asimismo, se determina el rango de entrada requerido por el convertidor. Estos datos orientan la selección de ganancia, filtrado y resolución sin recurrir a valores arbitrarios.</p><p><b>Desarrollo 2.</b> Posteriormente, se analiza la protección eléctrica. Aunque un circuito pueda adquirir correctamente una señal, ello no demuestra por sí mismo su seguridad. Por esta razón, deben identificarse las barreras de aislamiento, limitaciones de corriente y condiciones de alimentación pertinentes para el nivel de desarrollo alcanzado.</p><p><b>Desarrollo 3.</b> Además, la evaluación del prototipo debe utilizar instrumentos y procedimientos documentados. Por ejemplo, pueden compararse lecturas frente a una referencia, calcularse errores y registrar repetibilidad. Sin embargo, los resultados deben interpretarse dentro de los límites del prototipo y no extrapolarse a una certificación clínica que no haya sido realizada.</p><p><b>Cierre.</b> En síntesis, una redacción rigurosa en electromedicina diferencia claramente entre funcionamiento, desempeño medido y conformidad normativa. Esta distinción permite presentar resultados defendibles y evita afirmaciones de seguridad o eficacia que no estén respaldadas por las pruebas correspondientes.</p></div></details>
+    </section>
+
+    <section id="revisor" class="card reviewer-card">
+      <span class="section-number">7</span><h3>REVISOR INTEGRAL DE VIÑETAS, CONECTORES Y PÁRRAFOS</h3>
+      <p>Puede revisarse un fragmento pegado directamente o cargar un archivo. El análisis se realiza en el navegador. En archivos DOCX y PDF se extrae el texto para aplicar los criterios de redacción; no se modifica el documento original.</p>
+      <div class="review-grid">
+        <div><label for="reviewArea">Área o mención</label><select id="reviewArea"><option value="general">General</option><option value="telecom">Telecomunicaciones</option><option value="control">Sistemas de Control y Automatización</option><option value="electro">Electromedicina</option></select></div>
+        <div><label for="reviewFocus">Tipo de revisión</label><select id="reviewFocus"><option value="all">Revisión integral</option><option value="bullets">Solo viñetas</option><option value="connectors">Solo conectores</option><option value="paragraphs">Solo párrafos</option></select></div>
+      </div>
+      <label for="fileInput">Cargar TXT, DOCX o PDF</label>
+      <input id="fileInput" type="file" accept=".txt,.docx,.pdf,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+      <p id="fileStatus" class="small"></p>
+      <label for="studentText">Texto a revisar</label>
+      <textarea id="studentText" rows="16" placeholder="Pega aquí tus párrafos o carga un archivo. Para revisar viñetas, conserva cada elemento en una línea diferente."></textarea>
+      <div class="button-row"><button id="reviewBtn" class="primary" type="button">Revisar redacción</button><button id="clearBtn" class="secondary" type="button">Limpiar</button><button id="sampleBtn" class="secondary" type="button">Cargar ejemplo con errores</button></div>
+      <div id="reviewOutput" class="output-box hidden"></div>
+    </section>
+
+    <section class="card">
+      <span class="section-number">8</span><h3>PROMPT PARA UNA REVISIÓN SEMÁNTICA MÁS PROFUNDA</h3>
+      <p>El revisor local detecta patrones formales y problemas frecuentes. Para una revisión lingüística y metodológica más profunda, puede copiarse el siguiente prompt y utilizarse junto con el fragmento o documento en ChatGPT.</p>
+      <button id="copyPromptBtn" class="primary" type="button">Copiar prompt de revisión profunda</button><span id="copyStatus" class="small"></span>
+    </section>
+
+    <section id="fuentes" class="card sources-card">
+      <span class="section-number">9</span><h3>FUENTES Y CRITERIOS UTILIZADOS</h3>
+      <p>Este módulo integra el material proporcionado por el docente con criterios ortográficos y gramaticales de referencia. La RAE reconoce, entre otros, conectores discursivos como <i>en cambio, en conclusión, en consecuencia, en resumen</i> y <i>en síntesis</i>; su empleo depende de la relación que se desea expresar en el discurso.</p>
+      <ul>
+        <li><b>Material docente:</b> “COMO USAR LAS VIÑETAS SEGÚN LA RAE.docx”.</li>
+        <li><b>Material docente:</b> “COMO ESCRIBIR UN PÁRRAFO.pdf”.</li>
+        <li><b>Material docente:</b> “Conectores gramaticales.pdf”.</li>
+        <li><a href="https://www.rae.es/diccionario-estudiante/docs/ortografia.pdf">Real Academia Española · Ortografía</a>.</li>
+        <li><a href="https://www.rae.es/sites/default/files/Indice_de_contenidos_Manual_Nueva_gramatica_de_la_lengua_espanola.pdf">RAE/ASALE · Nueva gramática de la lengua española, índice de contenidos</a>.</li>
+      </ul>
+      <div class="notice blue"><strong>Criterio de aplicación:</strong> las pautas de listas y párrafos se utilizan como guía académica para PROYECTA-IA. Cuando una institución establezca una plantilla específica, esa plantilla prevalece en la presentación formal del Proyecto de Grado.</div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-inner">
-      <div>
-        <strong>PROYECTA-IA</strong>
-        <p>Taller de Tesis II · Proyecto de Grado</p>
-      </div>
-      <div class="footer-creator">
-        <span>Creado por</span>
-        <strong>Luis Cabezas Tito, Ph. D.</strong>
-      </div>
-    </div>
-  </footer>
+  <footer><div class="wrap footer-inner"><div><strong>PROYECTA-IA</strong><p>Viñetas · Conectores · Párrafos · Revisión académica</p></div><div class="footer-author">Luis Cabezas Tito, Ph. D.</div></div></footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+  <script src="https://luisctito-sketch.github.io/proyecta-ia-acceso/access.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
